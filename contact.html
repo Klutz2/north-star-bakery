@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery | Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact North Star Bakery</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pre-Order or Send an Inquiry</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Customer Information</legend>
+
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="pickup-date">Pickup Date:</label>
+                        <input type="date" id="pickup-date"
+                               name="pickup-date" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Request Details</legend>
+
+                    <p>Request Type:</p>
+
+                    <input type="radio" id="preorder"
+                           name="request-type" value="preorder" required>
+                    <label for="preorder">Pre-Order</label>
+
+                    <input type="radio" id="question"
+                           name="request-type" value="question">
+                    <label for="question">General Question</label>
+
+                    <p>
+                        <label for="item-details">Item Details:</label><br>
+                        <textarea id="item-details"
+                                  name="item-details"
+                                  rows="5"
+                                  cols="40"
+                                  required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="allergy-notes">
+                            Allergy Notes (if applicable):
+                        </label><br>
+
+                        <textarea id="allergy-notes"
+                                  name="allergy-notes"
+                                  rows="4"
+                                  cols="40"></textarea>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Location</h2>
+            <p>North Star Bakery</p>
+            <p>123 Main Street</p>
+            <p>Our Neighborhood, USA</p>
+        </section>
+
+        <section>
+            <h2>Hours of Operation</h2>
+            <p>Monday–Friday: 6:00 AM–6:00 PM</p>
+            <p>Saturday–Sunday: 7:00 AM–4:00 PM</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery</p>
+    </footer>
+</body>
+</html>
