@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Products</title>
 <link rel="stylesheet" href="styles.css">
+<script src="scripts.js" defer></script>
 </head>
 
 <body>
@@ -25,7 +26,15 @@
     <main id="main-content">
         <h1>Our Products</h1>
 
-        <div class="page-layout">
+        <section class="favorites-panel" aria-labelledby="favorites-heading"><h2 id="favorites-heading">Your bakery favorites</h2>
+<p>Save the products you would like to ask about. Use your favorites to help plan a pre-order.</p>
+<p id="favorite-count"></p>
+<div id="product-choices" class="product-choices"></div>
+<p id="favorites-empty">No favorites saved yet. Visit Products to choose your favorites.</p>
+<ul id="saved-favorites"></ul>
+<p id="storage-note" class="helper-text"></p>
+<p id="favorites-status" class="status-message" role="status"></p>
+<button id="clear-favorites" type="button">Clear favorites</button><a href="contact.html" class="button">Use favorites in a request</a></section><div class="page-layout">
 <section>
             <h2>Breads</h2>
 
@@ -83,4 +92,3 @@
     </footer>
 </body>
 </html>
-

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Contact</title>
 <link rel="stylesheet" href="styles.css">
+<script src="scripts.js" defer></script>
 </head>
 
 <body>
@@ -25,28 +26,37 @@
     <main id="main-content">
         <h1>Contact North Star Bakery</h1>
 
-        <div class="contact-layout">
+        <section class="favorites-panel" aria-labelledby="favorites-heading"><h2 id="favorites-heading">Your bakery favorites</h2>
+<p>Save the products you would like to ask about. Use your favorites to help plan a pre-order.</p>
+<p id="favorite-count"></p>
+<p id="favorites-empty">No favorites saved yet. Visit Products to choose your favorites.</p>
+<ul id="saved-favorites"></ul>
+<p id="storage-note" class="helper-text"></p>
+<p id="favorites-status" class="status-message" role="status"></p>
+<button id="clear-favorites" type="button">Clear favorites</button><a href="products.html">Choose more favorites</a></section><div class="contact-layout">
 <section class="contact-form">
             <h2>Pre-Order or Send an Inquiry</h2>
 
             <form action="#" method="post">
-                <fieldset>
+                <p class="helper-text">This classroom form validates your request but does not send an order.</p>
+<p id="form-status" role="status" class="status-message"></p>
+<fieldset>
                     <legend>Customer Information</legend>
 
                     <p>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </p>
+                        <input type="text" id="name" name="name" required aria-describedby="name-error">
+                    <p id="name-error" class="field-error"></p></p>
 
                     <p>
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </p>
+                        <input type="email" id="email" name="email" required aria-describedby="email-error">
+                    <p id="email-error" class="field-error"></p></p>
 
                     <p>
                         <label for="pickup-date">Pickup Date:</label>
-                        <input type="date" id="pickup-date" name="pickup-date" required>
-                    </p>
+                        <input type="date" id="pickup-date" name="pickup-date" required aria-describedby="pickup-date-error">
+                    <p id="pickup-date-error" class="field-error"></p></p>
                 </fieldset>
 
                 <fieldset>
@@ -56,20 +66,21 @@
 
                     <div class="radio-group">
 <div class="radio-option">
-<input type="radio" id="preorder" name="request-type" value="preorder" required>
+<input type="radio" id="preorder" name="request-type" value="preorder" required aria-describedby="request-type-error">
                     <label for="preorder">Pre-Order</label>
 
                     </div>
 <div class="radio-option">
-<input type="radio" id="question" name="request-type" value="question">
+<input type="radio" id="question" name="request-type" value="question" aria-describedby="request-type-error">
                     <label for="question">General Question</label>
 
                     </div>
 </div>
+<p id="request-type-error" class="field-error"></p>
 <p>
                         <label for="item-details">Item Details:</label><br>
-                        <textarea id="item-details" name="item-details" rows="5" cols="40" required></textarea>
-                    </p>
+                        <textarea id="item-details" name="item-details" rows="5" cols="40" required aria-describedby="item-details-error favorites-prefill-note"></textarea>
+                    <p id="favorites-prefill-note" class="helper-text"></p><p id="item-details-error" class="field-error"></p></p>
 
                     <p>
                         <label for="allergy-notes">
@@ -104,4 +115,3 @@
     </footer>
 </body>
 </html>
-
