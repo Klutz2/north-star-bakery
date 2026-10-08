@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Home</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>North Star Bakery</h1>
-
-        <nav>
+    <a href="#main-content" class="skip-link">Skip to content</a><header>
+        <div>
+<a href="index.html" class="brand">North Star Bakery</a><p class="brand-note">Freshly baked. Made with care.</p>
+</div>
+<nav aria-label="Main navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -20,8 +22,11 @@
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main id="main-content">
+        <h1>North Star Bakery</h1>
+
+        <div class="page-layout">
+<section>
             <h2>Welcome to North Star Bakery</h2>
             <p>
                 Welcome to North Star Bakery, your neighborhood bakery for
@@ -30,9 +35,8 @@
                 goods made with care.
             </p>
 
-            <img src="bakery-storefront.jpg"
-                 alt="Storefront of North Star Bakery">
-        </section>
+            <img src="bakery-storefront.jpg" alt="Storefront of North Star Bakery">
+        <a href="products.html" class="button">Explore our products</a></section>
 
         <section>
             <h2>What We're Known For</h2>
@@ -46,12 +50,10 @@
             <h2>Featured Item of the Week</h2>
 
             <picture>
-                <source media="(min-width: 800px)"
-                        srcset="bakery-feature-large.jpg">
+                <source media="(min-width: 800px)" srcset="bakery-feature-large.jpg">
 
-                <img src="bakery-feature-small.jpg"
-                     alt="Featured baked item of the week from North Star Bakery">
-            </picture>
+                <img src="bakery-feature-small.jpg" alt="Featured baked item of the week from North Star Bakery">
+            </source></picture>
 
             <p>
                 Stop by this week to try our featured bakery item, freshly
@@ -73,12 +75,13 @@
                 <source src="bakery-welcome.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
                 Please contact North Star Bakery for more information.
-            </audio>
+            </source></audio>
         </section>
-    </main>
+    </div></main>
 
     <footer>
-        <p>&copy; 2026 North Star Bakery</p>
+        <p>© 2026 North Star Bakery</p>
     </footer>
 </body>
 </html>
+

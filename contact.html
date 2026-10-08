@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Contact</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Contact North Star Bakery</h1>
-
-        <nav>
+    <a href="#main-content" class="skip-link">Skip to content</a><header>
+        <div>
+<a href="index.html" class="brand">North Star Bakery</a><p class="brand-note">Freshly baked. Made with care.</p>
+</div>
+<nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main id="main-content">
+        <h1>Contact North Star Bakery</h1>
+
+        <div class="contact-layout">
+<section class="contact-form">
             <h2>Pre-Order or Send an Inquiry</h2>
 
             <form action="#" method="post">
@@ -40,8 +45,7 @@
 
                     <p>
                         <label for="pickup-date">Pickup Date:</label>
-                        <input type="date" id="pickup-date"
-                               name="pickup-date" required>
+                        <input type="date" id="pickup-date" name="pickup-date" required>
                     </p>
                 </fieldset>
 
@@ -50,21 +54,21 @@
 
                     <p>Request Type:</p>
 
-                    <input type="radio" id="preorder"
-                           name="request-type" value="preorder" required>
+                    <div class="radio-group">
+<div class="radio-option">
+<input type="radio" id="preorder" name="request-type" value="preorder" required>
                     <label for="preorder">Pre-Order</label>
 
-                    <input type="radio" id="question"
-                           name="request-type" value="question">
+                    </div>
+<div class="radio-option">
+<input type="radio" id="question" name="request-type" value="question">
                     <label for="question">General Question</label>
 
-                    <p>
+                    </div>
+</div>
+<p>
                         <label for="item-details">Item Details:</label><br>
-                        <textarea id="item-details"
-                                  name="item-details"
-                                  rows="5"
-                                  cols="40"
-                                  required></textarea>
+                        <textarea id="item-details" name="item-details" rows="5" cols="40" required></textarea>
                     </p>
 
                     <p>
@@ -72,10 +76,7 @@
                             Allergy Notes (if applicable):
                         </label><br>
 
-                        <textarea id="allergy-notes"
-                                  name="allergy-notes"
-                                  rows="4"
-                                  cols="40"></textarea>
+                        <textarea id="allergy-notes" name="allergy-notes" rows="4" cols="40"></textarea>
                     </p>
                 </fieldset>
 
@@ -83,7 +84,7 @@
             </form>
         </section>
 
-        <section>
+        <aside class="contact-details" aria-label="Visit the bakery"><section>
             <h2>Location</h2>
             <p>North Star Bakery</p>
             <p>123 Main Street</p>
@@ -95,10 +96,12 @@
             <p>Monday–Friday: 6:00 AM–6:00 PM</p>
             <p>Saturday–Sunday: 7:00 AM–4:00 PM</p>
         </section>
-    </main>
+    </aside>
+</div></main>
 
     <footer>
-        <p>&copy; 2026 North Star Bakery</p>
+        <p>© 2026 North Star Bakery</p>
     </footer>
 </body>
 </html>
+

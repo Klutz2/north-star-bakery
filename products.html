@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery | Products</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Our Products</h1>
-
-        <nav>
+    <a href="#main-content" class="skip-link">Skip to content</a><header>
+        <div>
+<a href="index.html" class="brand">North Star Bakery</a><p class="brand-note">Freshly baked. Made with care.</p>
+</div>
+<nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html" aria-current="page">Products</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main id="main-content">
+        <h1>Our Products</h1>
+
+        <div class="page-layout">
+<section>
             <h2>Breads</h2>
 
-            <img src="bakery-bread.jpg"
-                 alt="Fresh artisan bread baked at North Star Bakery">
+            <img src="bakery-bread.jpg" alt="Fresh artisan bread baked at North Star Bakery">
 
             <p>
                 Our breads are baked fresh and include traditional loaves,
@@ -38,8 +42,7 @@
             <h2>Our Signature Loaf</h2>
 
             <figure>
-                <img src="bakery-signature-loaf.jpg"
-                     alt="North Star Bakery's freshly baked Signature Loaf">
+                <img src="bakery-signature-loaf.jpg" alt="North Star Bakery's freshly baked Signature Loaf">
 
                 <figcaption>
                     Our Signature Loaf is handcrafted and baked fresh for our
@@ -73,10 +76,11 @@
                 Visit our Contact page to submit a pre-order request.
             </p>
         </section>
-    </main>
+    </div></main>
 
     <footer>
-        <p>&copy; 2026 North Star Bakery</p>
+        <p>© 2026 North Star Bakery</p>
     </footer>
 </body>
 </html>
+
